@@ -14,9 +14,9 @@ GREP=grep
 NM=nm
 CCADMIN=CCadmin
 RANLIB=ranlib
-CC=gcc
-CCC=g++
-CXX=g++
+CC=gcc-5
+CCC=g++-5
+CXX=g++-5
 FC=gfortran
 AS=as
 
@@ -52,11 +52,11 @@ OBJECTFILES= \
 
 
 # C Compiler Flags
-CFLAGS=
+CFLAGS=-L/opt/opencv2/lib -I/opt/opencv2/include
 
 # CC Compiler Flags
-CCFLAGS=
-CXXFLAGS=
+CCFLAGS=-L/opt/opencv2/lib -I/opt/opencv2/include
+CXXFLAGS=-L/opt/opencv2/lib -I/opt/opencv2/include
 
 # Fortran Compiler Flags
 FFLAGS=
